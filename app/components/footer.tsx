@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 export default function Footbar() {
      const currentYear = new Date().getFullYear(); 
@@ -7,7 +8,7 @@ export default function Footbar() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
               <div className="flex items-center">
-                  <img src="/image/serv.png" className="h-8 me-3" />
+                  <Image src="/image/serv.png" width={40} height={40} className="h-8 me-3" alt="footer" />
                   <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dave-Tech</span>
               </div>
               

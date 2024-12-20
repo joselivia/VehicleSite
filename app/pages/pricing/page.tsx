@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import { useState } from 'react';
 
 const features = [
@@ -30,7 +31,7 @@ export default function FeatureTabs() {
   return (
  
    
-    <div className="py-10 px-8 bg-gray-100 bg-center bg-no-repeat bg-cover"  style={{
+    <div className="bg-fixed py-10 px-8 bg-gray-100 bg-center bg-no-repeat bg-cover"  style={{
       backgroundImage: "url('/image/bg1.png')",
       backgroundBlendMode: "multiply",
     }}>
@@ -48,8 +49,8 @@ export default function FeatureTabs() {
               onClick={() => setSelectedTab(index)}
               className={`py-2 px-4 border-b-2 font-semibold ${
                 selectedTab === index
-                  ? 'border-blue-500 text-blue-500'
-                  : 'border-transparent text-white-600 hover:text-blue-500'
+                  ? 'border-red-500 text-red-500'
+                  : 'border-transparent text-white-600 hover:text-red-500'
               }`}
             >
               {feature.title}
@@ -57,14 +58,16 @@ export default function FeatureTabs() {
           ))}
         </div>
 
-        {/* Tab Content */}
+
         <div className="p-6 bg-gray-200 bg-opacity-100 rounded-lg shadow-lg">
           <h3 className="text-2xl font-bold dark:text-blue-900 mb-4">{features[selectedTab].title}</h3>
           <p className="text-gray-700 mb-6">{features[selectedTab].description}</p>
-          <img
+          <Image
             className="w-full h-64 object-contain"
             src={features[selectedTab].image}
             alt={features[selectedTab].title}
+            width={300}
+                height={300}
           />
         </div>
       </div>

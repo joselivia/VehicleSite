@@ -1,4 +1,3 @@
-// pages/company.tsx
 "use client";
 
 import React from "react";
@@ -6,7 +5,7 @@ import React from "react";
 export default function CompanyPage() {
   return (
     <section
-      className="bg-center bg-no-repeat bg-cover min-h-screen py-10 px-5 bg-gray-100 flex flex-col items-center"
+      className="bg-fixed bg-center bg-no-repeat bg-cover min-h-screen py-10 px-5 bg-gray-100 flex flex-col items-center"
       style={{
         backgroundImage: "url('/image/anana.png')",
         backgroundBlendMode: "multiply",
@@ -19,7 +18,7 @@ export default function CompanyPage() {
       </div>
 
       <div className="w-full max-w-5xl bg-gray-400 bg-opacity-50 shadow-md rounded-lg p-8">
-        <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">
+        <h1 className="text-4xl font-bold text-center dark:text-white mb-6">
           Welcome to Davetech
         </h1>
         <p className="text-lg leading-relaxed dark:text-white mb-4">
@@ -37,13 +36,13 @@ export default function CompanyPage() {
         <p className="text-lg leading-relaxed dark:text-white">
           We pride ourselves on offering fast, reliable, and affordable
           solutions for individuals and businesses alike. From key cutting to
-          complex vehicle wiring systems, we've got you covered.
+          complex vehicle wiring systems, we have got you covered.
         </p>
       </div>
 
       {/* Services Section */}
       <div className="w-full max-w-5xl bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
-        <h2 className="text-3xl font-bold text-center text-blue-600 mb-6">
+        <h2 className="text-3xl font-bold text-center dark:text-white-800 mb-6">
           Our Services
         </h2>
         <ul className="list-disc list-inside text-lg dark:text-white leading-relaxed">
@@ -57,18 +56,19 @@ export default function CompanyPage() {
 
       {/* Location Section */}
       <div className="w-full max-w-5xl bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
-        <h2 className="text-3xl font-bold text-center text-blue-600 mb-6">
+        <h2 className="text-3xl font-bold text-center dark:text-white-800 mb-6">
           Location
         </h2>
         <p className="text-lg leading-relaxed dark:text-white mb-4 text-center">
-          You can find Davetech at <strong>Ananas opposite Sarit Center Parking</strong>. We serve
+          You can find Davetech at{" "}
+          <strong>Ananas opposite Sarit Center Parking</strong>. We serve
           clients across the country and are available for both in-shop and
           on-site services. Get in touch with us today for all your key and
           automotive wiring needs in Our Main Office,Westlands,Nairobi .
         </p>
         <div className="flex justify-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=[YOUR_MAP_EMBED_URL]"
+                   <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8513037433404!2d36.8012968732139!3d-1.261498698726496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17ec40b697a1%3A0xbed94f6e5c273614!2sAnanas%20Mall%20Westlands.!5e0!3m2!1sen!2ske!4v1728624512023!5m2!1sen!2ske"
             width="600"
             height="450"
             allowFullScreen
@@ -78,8 +78,8 @@ export default function CompanyPage() {
           />
         </div>
       </div>
-     <div className="w-full max-w-5xl bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
-        <h2 className="text-3xl font-bold text-center text-blue-600 mb-6">
+      <div className="w-full max-w-5xl bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
+        <h2 className="text-3xl font-bold text-center dark:text-white-800 mb-6">
           Get In Touch
         </h2>
         <p className="text-lg leading-relaxed dark:text-white mb-4 text-center">
@@ -101,7 +101,7 @@ export default function CompanyPage() {
             New
           </span>
           <span className="text-sm font-medium">
-            DaveTech have new components! See what's new ?
+            DaveTech have new components! See what is new ?
           </span>
         </a>
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
@@ -112,7 +112,7 @@ export default function CompanyPage() {
           and capital can unlock long-term value and drive economic growth. we
           value our Customers.
         </p>
-           </div>
+      </div>
     </section>
   );
 }

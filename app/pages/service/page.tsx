@@ -1,10 +1,11 @@
 import Customer from "@/app/components/customer";
 import MyWork from "@/app/components/mywork";
+import Image from "next/image";
 
 export default function Services() {
   return (
     <section
-      className="bg-center bg-no-repeat bg-cover"
+      className="bg-fixed bg-center bg-no-repeat bg-cover"
       style={{
         backgroundImage: "url('/image/serv.png')",
         backgroundBlendMode: "multiply",
@@ -16,12 +17,14 @@ export default function Services() {
         </h2>
       </div>
       <MyWork  />
-      <div className="justify-center flex flex-wrap pb-4 py-10">
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4">
-          <img
-            className="w-full h-64 object-cover rounded-t-lg"
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 py-10">
+        <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <Image
+            className="w-full h-50 md:h-60 object-contain"
             src="/image/bg.png"
             alt="Service"
+            width={200}
+            height={200}
           />
 
           <div className="p-5">
@@ -37,11 +40,13 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4">
-          <img
-            className="w-full h-64 object-cover rounded-t-lg"
+        <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <Image
+            className="w-full h-50 md:h-60 object-contain"
             src="/image/bg.png"
             alt="Service"
+            width={200}
+            height={200}
           />
 
           <div className="p-5">
@@ -57,11 +62,13 @@ export default function Services() {
           </div>
           
         </div>
-        <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4">
-          <img
-            className="w-full h-64 object-cover rounded-t-lg"
+        <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <Image
+            className="w-full h-50 md:h-60 object-contain"
             src="/image/bg.png"
             alt="Service"
+            width={200}
+          height={200}
           />
 
           <div className="p-5">

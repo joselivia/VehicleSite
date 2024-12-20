@@ -3,7 +3,7 @@ import MessageForm from "./components/messageform";
 export default function Home() {
   return (
     <section
-      className="bg-center bg-no-repeat bg-cover"
+      className="bg-fixed bg-center bg-no-repeat bg-cover"
       style={{
         backgroundImage: "url('/image/bg1.png')", 
         backgroundBlendMode: "multiply",

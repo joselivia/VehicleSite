@@ -1,5 +1,5 @@
 'use client'
-import { useState,useEffect } from 'react';
+import { useState} from 'react';
 import {push,ref, set} from 'firebase/database';
 import { db } from '@/firebaseConfig'; 
 
@@ -20,7 +20,7 @@ export default function MessageForm  () {
       setName("");
       setMessage("");
       setSuccess('Thanks,Message submitted successfully!');      
-    }catch(error){
+    }catch{
       setError('An error occurred. Please try again later.');
     }
 

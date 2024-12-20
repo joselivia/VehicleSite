@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { FiPhone, FiMenu, FiX } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import Image from "next/image";
 
 export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,38 +23,21 @@ export default function Navbar() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <div className="mb-6 md:mb-0">
             <div className="flex items-center">
-              <img src="/image/serv.png" className="h-8 me-3" />
+              <Image
+                src="/image/serv.png"
+                className="h-8 me-3"
+                width={40}
+                height={40}
+                     alt=".."
+              />
             </div>
           </div>
           <div className="relative hidden md:block">
-            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg
-                className="w-4 h-4 text-gray-500 dark:text-gray-400"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-              <span className="sr-only">Search icon</span>
-            </div>
-            <input
-              type="text"
-              id="search-navbar"
-              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Search..."
-            />
-          </div>
+           <h1 className="bold">Dave Tech</h1>
+                   </div>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <a
-              href="tel:0701936432"
+                  href="tel:0701936432"
               className="text-sm text-gray-500 dark:text-white hover:underline flex items-center"
             >
               <FiPhone className="mr-1" />
@@ -83,7 +67,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/"
-                  className="text-gray-900 dark:text-white hover:underline"
+                  className="text-gray-900 dark:text-white hover:underline "
                 >
                   Home
                 </Link>
@@ -91,7 +75,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/pages/company"
-                  className="text-gray-900 dark:text-white hover:underline"
+                  className="text-gray-900 dark:text-white hover:underline "
                 >
                   Company
                 </Link>

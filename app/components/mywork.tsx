@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const images = ['/image/bg1.png', '/image/bg2.png', '/image/bg.png'];
@@ -35,9 +36,11 @@ export default function MyWork() {
                                 index === currentImage ? 'opacity-100' : 'opacity-0'
                             }`}
                         >
-                            <img
+                            <Image
                                 src={img}
                                 alt={`Slide ${index + 1}`}
+                                width={200}
+                height={200}
                                 className="w-full h-full object-contain"
                             />
                         </div>

@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 export default function NewItems() {
     return (
       <section
-        className="bg-center bg-no-repeat bg-cover py-10 px-8"
+        className="bg-fixed bg-center bg-no-repeat bg-cover py-10 px-8"
         style={{
           backgroundImage: "url('/image/bg2.png')",
           backgroundBlendMode: "multiply",
@@ -13,14 +15,15 @@ export default function NewItems() {
           </h2>
         </div>
   
-        {/* Grid Layout for Products */}
+ 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 py-10">
-          {/* Product 1 */}
-          <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img
+            <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <Image
               className="w-full h-50 md:h-60 object-contain"
               src="/image/bg1.png"
               alt="Product Image 1"
+              width={200}
+              height={200}
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -34,10 +37,12 @@ export default function NewItems() {
   
           {/* Product 2 */}
           <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img
+            <Image
               className="w-full h-50 md:h-60 object-contain"
               src="/image/bg2.png"
               alt="Product Image 2"
+              width={200}
+              height={200}
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -51,10 +56,12 @@ export default function NewItems() {
   
           {/* Product 3 */}
           <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img
+            <Image
               className="w-full h-50 md:h-60 object-contain"
               src="/image/bg.png"
               alt="Product Image 3"
+              width={200}
+              height={200}
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
