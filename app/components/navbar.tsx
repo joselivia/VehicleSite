@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { FiPhone, FiMenu, FiX } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
@@ -16,32 +16,26 @@ export default function Navbar() {
   const closeSidebar = () => {
     setSidebarOpen(false);
   };
-
   return (
     <div>
       <div className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-          <div className="mb-6 md:mb-0">
-            <div className="flex items-center">
+          <div className="flex items-center">
+            <a href="/">
               <Image
-                src="/image/serv.png"
-                className="h-8 me-3"
-                width={40}
-                height={40}
-                     alt=".."
+                src="/image/footer.png"
+                width={150}
+                height={100}
+                alt="logo"
               />
-            </div>
+            </a>
           </div>
-          <div className="relative hidden md:block">
-           <h1 className="bold">Dave Tech</h1>
-                   </div>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
             <a
-                  href="tel:0701936432"
+              href="tel:0701936432"
               className="text-sm text-gray-500 dark:text-white hover:underline flex items-center"
             >
               <FiPhone className="mr-1" />
-              call
             </a>
 
             <a
@@ -60,8 +54,8 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-50 dark:bg-gray-700 ">
-        <div className="max-w-screen-xl px-4 py-3 mx-auto">
+      <div className="bg-gray-50 dark:bg-gray-900 sticky top-0 z-50 ">
+        <div className="max-w-screen-xl px-4 py-3 ">
           <div className="hidden md:flex justify-center">
             <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
               <li>

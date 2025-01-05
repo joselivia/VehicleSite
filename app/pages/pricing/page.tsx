@@ -50,7 +50,7 @@ export default function FeatureTabs() {
               className={`py-2 px-4 border-b-2 font-semibold ${
                 selectedTab === index
                   ? 'border-red-500 text-red-500'
-                  : 'border-transparent text-white-600 hover:text-red-500'
+                  : 'border-transparent text-white-600 '
               }`}
             >
               {feature.title}
