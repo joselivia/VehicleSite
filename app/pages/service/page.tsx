@@ -1,4 +1,4 @@
-import Customer from "@/app/components/customer";
+import MessageBanner from "@/app/components/banner";
 import MyWork from "@/app/components/mywork";
 import Image from "next/image";
 
@@ -7,17 +7,17 @@ export default function Services() {
     <section
       className="bg-fixed bg-center bg-no-repeat bg-cover"
       style={{
-        backgroundImage: "url('/image/serv.png')",
+        backgroundImage: "url('/image/bg2.png')",
         backgroundBlendMode: "multiply",
       }}
     >
-      <div className="px-4 mx-auto max-w-screen-xl text-center lg:py-10 bg-gray-700 bg-opacity-50">
+      <div className="p-4 mx-auto w-full text-center lg:py-10 bg-gray-700 bg-opacity-50">
         <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl dark:text-white">
           Our Services
         </h2>
       </div>
       <MyWork  />
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 py-10">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 m-4">
         <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
           <Image
             className="w-full h-50 md:h-60 object-contain"
@@ -60,8 +60,7 @@ export default function Services() {
             </p>
           
           </div>
-          
-        </div>
+                  </div>
         <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
           <Image
             className="w-full h-50 md:h-60 object-contain"
@@ -82,12 +81,14 @@ export default function Services() {
                      </div>
         </div>
       </div>
-      <div className="px-4 mx-auto max-w-screen-xl text-center  lg:py-10 bg-gray-700 bg-opacity-50">
+
+
+      <div className="p-4  mx-auto  text-center  lg:py-10 bg-gray-700 bg-opacity-50">
         <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl dark:text-white">
           Our Satisfied Customers
         </h2>
       </div>
-      <Customer/>
-    </section>
+      <MessageBanner/>
+      </section>
   );
 }

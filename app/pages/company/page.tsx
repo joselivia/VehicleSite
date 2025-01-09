@@ -5,19 +5,19 @@ import React from "react";
 export default function CompanyPage() {
   return (
     <section
-      className="bg-fixed bg-center bg-no-repeat bg-cover min-h-screen py-10 px-5 bg-gray-100 flex flex-col items-center"
+      className="bg-fixed bg-center bg-no-repeat bg-cover py-10 px-5 bg-gray-500 flex flex-col items-center"
       style={{
         backgroundImage: "url('/image/anana.png')",
         backgroundBlendMode: "multiply",
       }}
     >
-      <div className="px-4 mx-auto max-w-screen-xl text-center bg-gray-700 bg-opacity-50">
-        <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl dark:text-white">
+      <div className="px-4 mx-auto w-full text-center lg:py-10 bg-gray-700 bg-opacity-50 mb-4">
+        <h2 className="text-3xl font-extrabold leading-none tracking-tight md:text-4xl dark:text-white">
           Our Company
         </h2>
       </div>
 
-      <div className="w-full max-w-5xl bg-gray-400 bg-opacity-50 shadow-md rounded-lg p-8">
+      <div className="w-full bg-gray-400 bg-opacity-50 shadow-md rounded-lg p-3">
         <h1 className="text-4xl font-bold text-center dark:text-white mb-6">
           Welcome to Davetech
         </h1>
@@ -41,44 +41,48 @@ export default function CompanyPage() {
       </div>
 
       {/* Services Section */}
-      <div className="w-full max-w-5xl bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
+      <div className="w-full bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
         <h2 className="text-3xl font-bold text-center dark:text-white-800 mb-6">
           Our Services
         </h2>
-        <ul className="list-disc list-inside text-lg dark:text-white leading-relaxed">
-          <li>Key Duplication and Cutting</li>
-          <li>Car Unlocking</li>
-          <li>Vehicle Tracking Systems</li>
-          <li>General Wiring and Electrical Repair</li>
-          <li>Alarm and Security System Installation</li>
-        </ul>
+        <div className="flex justify-center">
+          <ul className="list-disc list-inside text-lg dark:text-white leading-relaxed text-left">
+            <li>Key Duplication and Cutting</li>
+            <li>Car Unlocking</li>
+            <li>Vehicle Tracking Systems</li>
+            <li>General Wiring and Electrical Repair</li>
+            <li>Alarm and Security System Installation</li>
+          </ul>
+        </div>
       </div>
 
       {/* Location Section */}
-      <div className="w-full max-w-5xl bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
+      <div className="w-full bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
         <h2 className="text-3xl font-bold text-center dark:text-white-800 mb-6">
           Location
         </h2>
-        <p className="text-lg leading-relaxed dark:text-white mb-4 text-center">
-          You can find Davetech at{" "}
-          <strong>Ananas opposite Sarit Center Parking</strong>. We serve
-          clients across the country and are available for both in-shop and
-          on-site services. Get in touch with us today for all your key and
-          automotive wiring needs in Our Main Office,Westlands,Nairobi .
-        </p>
-        <div className="flex justify-center">
-                   <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8513037433404!2d36.8012968732139!3d-1.261498698726496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17ec40b697a1%3A0xbed94f6e5c273614!2sAnanas%20Mall%20Westlands.!5e0!3m2!1sen!2ske!4v1728624512023!5m2!1sen!2ske"
-            width="600"
-            height="450"
-            allowFullScreen
-            loading="lazy"
-            className="border-0 rounded-md"
-            style={{ border: 0 }}
-          />
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-6">
+          <div className="text-lg leading-relaxed dark:text-white  flex flex-col justify-center">
+            <p>
+              You can find Davetech at
+              <strong>Ananas opposite Sarit Center Parking</strong>. We serve
+              clients across the country and are available for both in-shop and
+              on-site services. Get in touch with us today for all your key and
+              automotive wiring needs in Our Main Office, Westlands, Nairobi.
+            </p>
+          </div>
+          <div className="relative w-full h-0 pb-[56.25%]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8513037433404!2d36.8012968732139!3d-1.261498698726496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17ec40b697a1%3A0xbed94f6e5c273614!2sAnanas%20Mall%20Westlands.!5e0!3m2!1sen!2ske!4v1728624512023!5m2!1sen!2ske"
+              loading="lazy"
+              className="absolute top-0 left-0 w-full h-full rounded-md"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
-      <div className="w-full max-w-5xl bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
+
+      <div className="w-full bg-gray-700 bg-opacity-50 shadow-md rounded-lg mt-10 p-8">
         <h2 className="text-3xl font-bold text-center dark:text-white-800 mb-6">
           Get In Touch
         </h2>
@@ -92,7 +96,7 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8513037433404!2d
           </p>
         </ul>
       </div>
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+      <div className="py-8 px-4 mx-auto text-center lg:py-16 z-10 relative">
         <a
           href="/pages/new"
           className="inline-flex justify-between items-center py-1 px-1 pe-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800"

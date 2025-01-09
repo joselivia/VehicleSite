@@ -9,7 +9,7 @@ export default function NewItems() {
           backgroundBlendMode: "multiply",
         }}
       >
-        <div className="px-4 mx-auto max-w-screen-xl text-center lg:py-10 bg-gray-700 bg-opacity-50 py-4">
+        <div className="px-4 mx-auto text-center lg:py-10 bg-gray-700 bg-opacity-50 py-4">
           <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-4xl text-white">
             New Products in the Market
           </h2>

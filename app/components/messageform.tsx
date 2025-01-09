@@ -26,7 +26,7 @@ export default function MessageForm  () {
 
   }
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen ">
+    <div className="flex flex-col items-center justify-center py-8 px-4">
       <h2 className="mb-6 text-2xl font-bold text-white-800">Leave a Satisfactory Message</h2>
       <div className="w-full max-w-md rounded-lg shadow-md">
         <input

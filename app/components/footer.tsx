@@ -4,7 +4,7 @@ export default function Footbar() {
      const currentYear = new Date().getFullYear(); 
     return(
 <footer className="bg-white dark:bg-gray-900">
-    <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div className="mx-auto w-full  p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
               <div className="flex items-center">
@@ -50,8 +50,8 @@ export default function Footbar() {
           </div>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 ">© {currentYear} Dave-Tech™. All Rights Reserved.
+      <div className="sm:flex sm:justify-center sm:items-cente">
+          <span className="text-sm text-gray-500 dark:text-gray-400">© 2020-{currentYear} Dave-Tech™. All Rights Reserved.
           </span>
           </div>
     </div>

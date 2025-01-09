@@ -19,7 +19,7 @@ export default function RootLayout({
         />
       </Head>
       <body>
-        <Navbar />
+             <Navbar />
         <main>
           {children}
           <a
@@ -35,8 +35,7 @@ export default function RootLayout({
               color: "#2CFE02",
             }}
           >
-            {" "}
-            <FaWhatsappSquare />
+                     <FaWhatsappSquare />
           </a>
         </main>
         <Footbar />

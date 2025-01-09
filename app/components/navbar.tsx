@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { FiPhone, FiMenu, FiX } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
@@ -16,10 +16,11 @@ export default function Navbar() {
   const closeSidebar = () => {
     setSidebarOpen(false);
   };
+
   return (
-    <div>
-      <div className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+  
+      <div className="bg-white border-gray-200 dark:bg-gray-900 p-5 sticky top-0 z-50">
+        <div className="flex flex-wrap justify-between items-center mx-auto">
           <div className="flex items-center">
             <a href="/">
               <Image
@@ -53,15 +54,12 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-      </div>
-      <div className="bg-gray-50 dark:bg-gray-900 sticky top-0 z-50 ">
-        <div className="max-w-screen-xl px-4 py-3 ">
-          <div className="hidden md:flex justify-center">
-            <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+           <div className="hidden md:flex justify-center ">
+            <ul className="flex flex-row font-medium space-x-8 rtl:space-x-reverse text-2xl">
               <li>
                 <Link
                   href="/"
-                  className="text-gray-900 dark:text-white hover:underline "
+                  className="text-gray-900 dark:text-white hover:underline"
                 >
                   Home
                 </Link>
@@ -69,7 +67,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/pages/company"
-                  className="text-gray-900 dark:text-white hover:underline "
+                  className="text-gray-900 dark:text-white hover:underline"
                 >
                   Company
                 </Link>
@@ -92,20 +90,10 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-        </div>
-      </div>
+
       {sidebarOpen && (
-        <div className="md:hidden fixed top-0 right-0 w-3/4 h-full bg-gray-800 text-white z-50">
-          <div className="p-4 flex justify-between items-center">
-            <h2 className="text-lg">Menu</h2>
-            <button
-              onClick={closeSidebar}
-              className="text-2xl text-gray-300 hover:text-white"
-            >
-              <FiX />
-            </button>
-          </div>
-          <div className="p-4">
+        <div className="md:hidden fixed right-0 w-3/4 h-full bg-gray-800 text-white z-50">
+           <div className="p-4">
             <ul className="space-y-4">
               <li>
                 <Link
