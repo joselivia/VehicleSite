@@ -5,7 +5,7 @@ import { useState } from 'react';
 const features = [
   {
     title: 'Key Duplication',
-    description: 'We provide accurate and fast key duplication services for cars, homes, and other locks.',
+    description: 'We provide accurate and fast key duplication services for car locks.',
     image: '/image/bg1.png',
   },
   {

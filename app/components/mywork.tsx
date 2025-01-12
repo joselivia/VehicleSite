@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-const images = ['/image/bg1.png', '/image/bg2.png', '/image/bg.png'];
+const images = ['/image/a.png', '/image/c.gif', '/image/b.gif'];
 
 export default function MyWork() {
     const [currentImage, setCurrentImage] = useState(0);
@@ -39,8 +39,8 @@ export default function MyWork() {
                             <Image
                                 src={img}
                                 alt={`Slide ${index + 1}`}
-                                width={200}
-                height={200}
+                                width={400}
+                                height={200}
                                 className="w-full h-full object-contain"
                             />
                         </div>
