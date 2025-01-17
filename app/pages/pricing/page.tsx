@@ -6,22 +6,22 @@ const features = [
   {
     title: 'Key Duplication',
     description: 'We provide accurate and fast key duplication services for car locks.',
-    image: '/image/bg1.png',
+    image: '/image/dupl.png',
   },
   {
     title: 'Car Unlocking',
     description: 'Locked out of your car? Our skilled technicians will safely unlock your car without damage.',
-    image: '/image/bg1.png',
+    image: '/image/unlock.png',
   },
   {
     title: 'Tracking',
     description: 'Our advanced tracking solutions allow you to monitor the location of your vehicle at all times.',
-    image: '/image/bg1.png',
+    image: '/image/track.png',
   },
   {
     title: 'General Wiring',
     description: 'We specialize in all car wiring solutions, ensuring your vehicle’s electrical systems run smoothly.',
-    image: '/image/bg1.png',
+    image: '/image/general.png',
   },
 ];
 

@@ -21,6 +21,53 @@ export default function RootLayout({
       <body>
              <Navbar />
         <main>
+        <div className="wrapper"> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+            <div> 
+              <span className="dot"></span> 
+            </div> 
+          </div>
           {children}
           <a
             href="https://wa.me/+254701936432"
