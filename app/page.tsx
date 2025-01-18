@@ -57,7 +57,7 @@ export default function Home() {
         <title>Car Key Services</title>
         <meta
           name="description"
-          content="Car key replacement, duplication, unlocking, and more. We provide fast and reliable services in Nairobi."
+          content="car key replacement near me, lost car key replacement cost, car key programming near me,car key fob replacement,transponder key programming,car door unlocking service,car key cutting and programming,car key fob battery replacement,car alarm installation,car camera installation near me, and car tracking device installation. We provide fast and reliable services in Nairobi."
         />
       </Head>
       <section
@@ -81,8 +81,8 @@ export default function Home() {
             expert car key programming to advanced car tracking systems and
             robust car security solutions, we are dedicated to keeping you
             connected and secure on every journey. Trust us to deliver
-            innovation, reliability, and peace of mind for all your
-            automotive needs.
+            innovation, reliability, and peace of mind for all your automotive
+            needs.
           </p>
 
           <p className="mb-8 px-2 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
