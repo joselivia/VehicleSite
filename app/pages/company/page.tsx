@@ -64,8 +64,7 @@ export default function CompanyPage() {
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-6">
           <div className="text-lg leading-relaxed dark:text-white  flex flex-col justify-center">
             <p>
-              You can find Davetech at
-              <strong>Ananas opposite Sarit Center Parking</strong>. We serve
+              You can find Davetech at<strong> Ananas opposite Sarit Center Parking</strong>. We serve
               clients across the country and are available for both in-shop and
               on-site services. Get in touch with us today for all your key and
               automotive wiring needs in Our Main Office, Westlands, Nairobi.
