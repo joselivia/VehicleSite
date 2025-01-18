@@ -18,10 +18,12 @@ body {
   color: var(--foreground);
   background: var(--background);
 
-  max-height: 70%;
+
   font-family: Arial, Helvetica, sans-serif;
 }
-
+main{
+  height: 90%;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

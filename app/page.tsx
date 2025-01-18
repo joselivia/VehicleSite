@@ -4,12 +4,11 @@ import Script from "next/script";
 import MessageForm from "./components/messageform";
 
 export default function Home() {
-  // Job data
   const jobTitles = [
-    { title: "Car Keys", description: "We provide replacement and programming for lost or damaged car keys." },
-    { title: "Car Alarms", description: "We offer installation and repair services for car alarm systems." },
-    { title: "Vehicle Unlocking", description: "Expert unlocking services for all types of vehicles." },
-    { title: "Key Programming", description: "Specialized key programming to sync with your vehicle." },
+    { title: "Lost Car Key Replacement", description: "Lost key replacement for all cars involves creating new keys and reprogramming areplacement to match your vehicle's system." },
+    { title: "Car Unlocking Srvice", description: "Expert in car unlocking services  providing quick access with no scratch or damage to the vehicle. Service provided to all type of cars." },
+    { title: "Spare key Programming", description: "We provide services for spare keys ensuring seamless intergration with your Car security System." },
+    { title: "Tracking And Telematics", description: "Gps car tracking provides real-time location update for your Car, enhancing high security." },
   ];
 
   const [currentJobIndex, setCurrentJobIndex] = useState(0);
