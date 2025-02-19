@@ -99,31 +99,6 @@ div .dot {
   left: 20%; 
   animation: animate 10s linear infinite; 
 } 
-.wrapper div:nth-child(11) { 
-  top: 10%; 
-  left: 90%; 
-  animation: animate 9s linear infinite; 
-} 
-.wrapper div:nth-child(12) { 
-  top: 20%; 
-  left: 70%; 
-  animation: animate 7s linear infinite; 
-} 
-.wrapper div:nth-child(13) { 
-  top: 20%; 
-  left: 20%; 
-  animation: animate 8s linear infinite; 
-} 
-.wrapper div:nth-child(14) { 
-  top: 60%; 
-  left: 5%; 
-  animation: animate 6s linear infinite; 
-} 
-.wrapper div:nth-child(15) { 
-  top: 90%; 
-  left: 80%; 
-  animation: animate 9s linear infinite; 
-} 
 @keyframes animate { 
   0% { 
     transform: scale(0) translateY(0) rotate(70deg); 
