@@ -50,7 +50,7 @@ export default function Footbar() {
           </div>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="sm:flex sm:justify-center sm:items-cente">
+      <div className="flex justify-center items-cente">
           <span className="text-sm text-gray-500 dark:text-gray-400">© 2020-{currentYear} Dave-Tech™. All Rights Reserved.
           </span>
           </div>

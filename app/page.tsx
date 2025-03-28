@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Script from "next/script";
 import MessageForm from "./components/messageform";
-import Head from "next/head";
 
 export default function Home() {
   const jobTitles = [
@@ -53,13 +52,6 @@ export default function Home() {
           gtag('config', 'AW-16702323519');
         `}
       </Script>
-      <Head>
-        <title>Car Key Services</title>
-        <meta
-          name="description"
-          content="car key replacement near me, lost car key replacement cost, car key programming near me,car key fob replacement,transponder key programming,car door unlocking service,car key cutting and programming,car key fob battery replacement,car alarm installation,car camera installation near me, and car tracking device installation. We provide fast and reliable services in Nairobi."
-        />
-      </Head>
       <section
         className="bg-fixed bg-center bg-no-repeat bg-cover"
         style={{
