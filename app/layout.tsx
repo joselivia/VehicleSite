@@ -1,75 +1,29 @@
-"use client"
-import { useEffect } from "react";
-import Footbar from "./components/footer";
-import Navbar from "./components/navbar";
-import { FaWhatsappSquare } from "react-icons/fa";
 import "./globals.css";
-import Head from "next/head";
+import { Metadata } from "next";
+import RootLayout from "./root-layout"; 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://daves.co.ke"),
+  keywords: [
+    "lost car key",
+    "car key chip",
+    "car unlocking keys",
+    "alarm services",
+    "key replacement",
+    "car keys near me",
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-K2Z523S9';
-    document.head.appendChild(script);
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://www.googletagmanager.com/ns.html?id=GTM-K2Z523S9';
-    iframe.height = '0';
-    iframe.width = '0';
-    iframe.style.display = 'none';
-    iframe.style.visibility = 'hidden';
-    document.body.appendChild(iframe);
+  ],
+  title:{
+    default:"Daves Telamatic",
+    template:`%s | Daves Telematic`
+  },
+openGraph: {
+  description: "Daves Telematic offers expert car key replacement, key chip programming, car unlocking, alarm system installation, and security solutions. Reliable and fast services in Kenya.",
+images:['']
+}
 
-    return () => {
-      document.head.removeChild(script);
-      document.body.removeChild(iframe);
-    };
-  }, []);
+};
 
-  return (
-    <html lang="en">
-      <head>
-        <title>Car Services</title>
-        <meta name="description" content="Lost car key" />
-        <meta
-          name="keywords"
-          content="lost car key, car key chip, car unlocking, alarm services, key replacement"
-        />
-      </head>
-      <body>
-        <Navbar />
-        <main>
-          <div className="wrapper">
-            {Array.from({ length: 10 }).map((_, index) => (
-              <div key={index}>
-                <span className="dot"></span>
-              </div>
-            ))}
-          </div>
-          {children}
-          <a
-            href="https://wa.me/+254701936432"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              position: "fixed",
-              right: "20px",
-              bottom: "20px",
-              fontSize: "40px",
-              zIndex: 1000,
-              color: "#2CFE02",
-            }}
-          >
-            <FaWhatsappSquare />
-          </a>
-        </main>
-        <Footbar />
-      </body>
-    </html>
-  );
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <RootLayout>{children}</RootLayout>;
 }
