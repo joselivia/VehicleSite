@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date().toISOString(),
     },
     {
-      url: `${baseUrl}pages/service`,
+      url: `${baseUrl}/pages/service`,
       lastModified: new Date().toISOString(),
     },
     {
