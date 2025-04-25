@@ -50,10 +50,13 @@ export default function Footbar() {
           </div>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="flex justify-center items-cente">
+        <div className="sm:flex sm:justify-center sm:items-center">
           <span className="text-sm text-gray-500 dark:text-gray-400">© 2020-{currentYear} Dave-Tech™. All Rights Reserved.
           </span>
           </div>
+          <div className="sm:flex sm:justify-center sm:items-center">
+        <span className="text-sm text-gray-500 dark:text-gray-400"><i>Powered by <a href="tel:0759962133" className="hover:underline text-blue-500">jomuTech</a></i></span>
+           </div>    
     </div>
 </footer>
     )}
